@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <div className="navbar text-yellow-300 bg-transparent fixed z-50 font-[glegoo]">
+    <div className="navbar bg-transparent fixed z-50 font-primary text-neutral-100 font-bold mt-5">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -38,7 +38,7 @@ function Navbar() {
         </div>
       </div>
       <div className="navbar-center">
-        <a className="text-xl">sFitness</a>
+        <a className="text-2xl">sFitness</a>
       </div>
     </div>
   );

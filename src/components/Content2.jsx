@@ -3,7 +3,7 @@ import React from "react";
 function Content2() {
   return (
     <>
-      <div className="mt-[6rem] mx-[6rem] font-[glegoo] text-gray-500 relative z-20">
+      <div className="mt-[8rem] mx-[6rem] font-primary text-gray-500 relative z-20">
         <p className="text-[2rem]">Welcome to sFitness</p>
         <p className="font-bold text-[6rem] max-w-[75%]">
           Fitness is not a destination. It is a way of life

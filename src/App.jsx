@@ -19,9 +19,8 @@ function App() {
           }}
           className="flex items-center justify-center"
         >
-          <div className="align-center max-w-full mt-10 font-[glegoo] font-bold">
-            {/* //todo: make custom theme for font and color */}
-            <p className="text-[9rem] text-center">
+          <div className="align-center max-w-full mt-10 font-primary font-bold">
+            <p className="text-[9rem] text-center text-primary">
               Welcome to
               <br />
               sFitness
@@ -31,7 +30,7 @@ function App() {
         <ParallaxLayer
           offset={1}
           speed={0}
-          style={{ backgroundColor: "yellow" }}
+          style={{ backgroundColor: "#fde047" }}
         >
           <Content2 />
         </ParallaxLayer>
