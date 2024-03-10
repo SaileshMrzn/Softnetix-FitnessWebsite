@@ -34,7 +34,12 @@ function App() {
         >
           <Content2 />
         </ParallaxLayer>
-        <ParallaxLayer offset={2}>
+        <ParallaxLayer
+          offset={2}
+          speed={0}
+          factor={1}
+          style={{ backgroundColor: "#fde047" }}
+        >
           <Content3 />
         </ParallaxLayer>
       </Parallax>
