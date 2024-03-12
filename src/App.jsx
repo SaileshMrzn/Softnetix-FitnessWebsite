@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Content2 from "./components/Content2";
 import Content3 from "./components/Content3";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { motion, useInView, useAnimation } from "framer-motion";
 import "./App.css";
 
 function App() {
@@ -19,13 +20,22 @@ function App() {
           }}
           className="flex items-center justify-center"
         >
-          <div className="align-center max-w-full mt-10 font-primary font-bold">
+          <motion.div
+            variants={{
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            animate="visible"
+            transition={{ delay: 0.25, duration: 0.5 }}
+            className="align-center max-w-full mt-10 font-primary font-bold"
+          >
             <p className="text-[9rem] text-center text-primary">
               Welcome to
               <br />
               sFitness
             </p>
-          </div>
+          </motion.div>
         </ParallaxLayer>
         <ParallaxLayer
           offset={1}
