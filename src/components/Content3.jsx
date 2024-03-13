@@ -1,11 +1,22 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
 
 function Content3() {
+  const { ref, inView } = useInView();
+
   return (
     <>
       <div className="grid grid-cols-3 mt-[6rem] mx-[6rem] font-primary text-gray-500">
-        <div className="col-span-1 font-bold text-[5rem]">
+        <div
+          ref={ref}
+          className={`col-span-1 font-bold text-[5rem] -translate-x-20 opacity-0 ${
+            inView
+              ? "translate-x-0 opacity-100  transition-all ease-in-out duration-500 delay-500"
+              : ""
+          }`}
+        >
           Explore our programs
+          {inView ? console.log("affirmative") : console.log("negative")}
           <button
             type="button"
             className="text-xl px-6 py-3 border-2 border-white text-white hover:bg-yellow-400 hover:text-gray-500 hover:translate-x-5 hover:transition-all ease-in-out duration-300"
