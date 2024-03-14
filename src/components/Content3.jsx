@@ -3,19 +3,24 @@ import { useInView } from "react-intersection-observer";
 
 function Content3() {
   const { ref, inView } = useInView();
+  const { ref: ref1 } = useInView();
+  const { ref: ref2 } = useInView();
+  const { ref: ref3 } = useInView();
+  const { ref: ref4 } = useInView();
 
   return (
     <>
       <div className="grid grid-cols-3 mt-[6rem] mx-[6rem] font-primary text-gray-500">
         <div
           ref={ref}
-          className={`col-span-1 font-bold text-[5rem] -translate-x-20 opacity-0 ${
+          className={`col-span-1 font-bold text-[5rem] -translate-x-20 opacity-0 max-w-[] ${
             inView
-              ? "translate-x-0 opacity-100  transition-all ease-in-out duration-500 delay-500"
+              ? "translate-x-0 opacity-100  transition-all ease-in-out duration-500 delay-300"
               : ""
           }`}
         >
-          Explore our programs
+          Explore <br />
+          our <br /> programs
           {inView ? console.log("affirmative") : console.log("negative")}
           <button
             type="button"
@@ -26,7 +31,14 @@ function Content3() {
         </div>
         <div className="col-span-2 text-[3rem]">
           <div className="grid grid-cols-2 gap-10">
-            <div>
+            <div
+              ref={ref1}
+              className={`${
+                inView
+                  ? "opacity-100 transition-all ease-in-out duration-500 delay-[800ms]"
+                  : "opacity-0"
+              }`}
+            >
               Training programs
               <p className="text-[1.25rem]">
                 Our training programs are throughly reviewed by fitness experts
@@ -36,7 +48,14 @@ function Content3() {
                 weight loss, muscle building, and more.
               </p>
             </div>
-            <div>
+            <div
+              ref={ref2}
+              className={`${
+                inView
+                  ? "opacity-100 transition-all ease-in-out duration-500 delay-[1300ms]"
+                  : "opacity-0"
+              }`}
+            >
               Online workshops
               <p className="text-[1.25rem]">
                 For those who have limited time or who are lazy, we also offer
@@ -45,7 +64,14 @@ function Content3() {
                 practical tips and interactive sessions.
               </p>
             </div>
-            <div>
+            <div
+              ref={ref3}
+              className={`${
+                inView
+                  ? "opacity-100 transition-all ease-in-out duration-500 delay-[1800ms]"
+                  : "opacity-0"
+              }`}
+            >
               Workout plan
               <p className="text-[1.25rem]">
                 Workout plan in there to help you create your perfect workout
@@ -53,7 +79,14 @@ function Content3() {
                 requirements.
               </p>
             </div>
-            <div>
+            <div
+              ref={ref4}
+              className={`${
+                inView
+                  ? "opacity-100 transition-all ease-in-out duration-500 delay-[2300ms]"
+                  : "opacity-0"
+              }`}
+            >
               Diet plan
               <p className="text-[1.25rem]">
                 Whether you are trying to build muscle, lose weight, or gain

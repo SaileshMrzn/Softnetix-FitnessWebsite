@@ -13,9 +13,9 @@ function Content2() {
       >
         <p className="text-[2rem]">Welcome to sFitness</p>
         <p
-          className={`font-bold text-[6rem] max-w-[75%] opacity-0 translate-y-40 ${
+          className={`font-bold text-[6rem] max-w-[70%] opacity-0 translate-y-40 ${
             inViewTxt
-              ? "opacity-100 translate-y-0 transition-all ease-in-out duration-500 delay-500"
+              ? "opacity-100 translate-y-0 transition-all ease-in-out duration-500 delay-300"
               : ""
           }`}
         >
@@ -28,8 +28,8 @@ function Content2() {
           alt=""
           className={`absolute xl:right-[-20%] md:right-[-40%] top-[20%] h-[70%] z-0 opacity-0 ${
             inViewImg
-              ? "xl:right-[0%] md:right-[-20%] opacity-100 transition-all ease-in-out duration-700 delay-700"
-              : ""
+              ? "xl:right-[0%] md:right-[-20%] opacity-100 transition-all ease-in-out duration-500 delay-200"
+              : "xl:right-[-20%] md:right-[-40%] opacity-0 transition-all ease-out duration-500 delay-150"
           }`}
         />
       </div>
