@@ -2,6 +2,9 @@ import Navbar from "./components/Navbar";
 import Content2 from "./components/Content2";
 import Content3 from "./components/Content3";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+// import Typewriter from "typewriter-effect";
+import { Typewriter } from "react-simple-typewriter";
+
 import "./App.css";
 
 function App() {
@@ -29,15 +32,20 @@ function App() {
               width: "100%",
               height: "100%",
               objectFit: "cover",
-              zIndex: "10",
+              zIndex: 10,
             }}
           />
-          <div className="align-center max-w-full mt-10 font-primary font-bold z-50">
-            <p className="text-[9rem] text-center text-primary">
-              Welcome to
-              <br />
-              sFitness
-            </p>
+          <div className="max-w-[60%] h-[25rem] font-primary font-bold z-50 text-[9rem] text-center text-primary">
+            <Typewriter
+              words={["Welcome to sFitness"]}
+              loop
+              cursor
+              cursorStyle="_"
+              typeSpeed={100}
+              deleteSpeed={100}
+              delaySpeed={2000}
+              className="text-[9rem] text-center text-primary"
+            />
           </div>
         </ParallaxLayer>
 
