@@ -7,7 +7,7 @@ function Content2() {
 
   return (
     <>
-      <div className="mt-[8rem] mx-[6rem] font-primary text-gray-500 relative z-20">
+      <div className="mt-[7rem] mx-[6rem] font-primary text-gray-500 relative z-20">
         <p className="text-[2rem]">Welcome to sFitness</p>
         <p
           ref={refTxt}
@@ -24,7 +24,7 @@ function Content2() {
         <img
           src="https://images.pexels.com/photos/4398382/pexels-photo-4398382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt=""
-          className={`absolute xl:right-[-20%] md:right-[-40%] top-[20%] h-[70%] z-0 opacity-0 ${
+          className={`absolute xl:right-[-20%] md:right-[-40%] top-[20%] h-[75%] z-0 opacity-0 ${
             inView
               ? "xl:right-[0%] md:right-[-20%] opacity-100 transition-all ease-in-out duration-500 delay-300"
               : "xl:right-[-20%] md:right-[-40%] opacity-0 transition-all ease-out duration-500 delay-150"

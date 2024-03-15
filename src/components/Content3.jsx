@@ -10,7 +10,7 @@ function Content3() {
 
   return (
     <>
-      <div className="grid grid-cols-3 mt-[6rem] mx-[6rem] font-primary text-gray-500">
+      <div className="grid grid-cols-3 mt-[7rem] mx-[6rem] font-primary text-gray-500">
         <div
           ref={ref}
           className={`col-span-1 font-bold text-[5rem] -translate-x-20 opacity-0 max-w-[] ${
