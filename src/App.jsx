@@ -1,17 +1,16 @@
 import Navbar from "./components/Navbar";
 import Content2 from "./components/Content2";
 import Content3 from "./components/Content3";
+import Footer from "./components/Footer";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-// import Typewriter from "typewriter-effect";
 import { Typewriter } from "react-simple-typewriter";
-
 import "./App.css";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Parallax pages={3}>
+      <Parallax pages={3.1}>
         <ParallaxLayer
           offset={0}
           speed={0}
@@ -64,6 +63,10 @@ function App() {
           style={{ backgroundColor: "#fde047" }}
         >
           <Content3 />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={3} speed={0}>
+          <Footer />
         </ParallaxLayer>
       </Parallax>
     </>
