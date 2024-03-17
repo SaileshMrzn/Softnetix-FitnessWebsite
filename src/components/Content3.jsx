@@ -1,5 +1,6 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
 
 function Content3() {
   const { ref, inView } = useInView();
@@ -22,12 +23,14 @@ function Content3() {
           Explore <br />
           our <br /> programs
           {inView ? console.log("affirmative") : console.log("negative")}
-          <button
-            type="button"
-            className="text-xl px-6 py-3 border-2 border-white text-white hover:bg-yellow-400 hover:text-gray-500 hover:translate-x-5 hover:transition-all ease-in-out duration-300"
-          >
-            Discover more
-          </button>
+          <Link to="/programs">
+            <button
+              type="button"
+              className="text-xl px-6 py-3 border-2 border-white text-white hover:bg-yellow-400 hover:text-gray-500 hover:translate-x-5 hover:transition-all ease-in-out duration-300"
+            >
+              Discover more
+            </button>
+          </Link>
         </div>
         <div className="col-span-2 text-[3rem]">
           <div className="grid grid-cols-2 gap-10">
