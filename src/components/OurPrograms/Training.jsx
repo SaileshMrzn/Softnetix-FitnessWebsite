@@ -8,7 +8,7 @@ function Training() {
       <div className="grid-cols-1">
         <Programs_nav />
       </div>
-      <div className="col-span-3 pt-[3.75rem] px-[2.5rem] font-primary text-[1.1rem]">
+      <div className="col-span-3 pt-[3rem] px-[2.5rem] font-primary text-[1.1rem] bg-gray-900">
         <header class="bg-gray-800 text-white py-4">
           <h1 class="text-3xl font-bold text-center">Training Programs</h1>
         </header>
@@ -51,9 +51,9 @@ function Training() {
             potential!
           </p>
           <img
-            class="mx-auto mb-8 rounded-lg shadow-lg"
+            class="mx-auto rounded-lg mt-8 shadow-lg"
             src="https://via.placeholder.com/600x300"
-            alt="Training Programs Image"
+            alt="Diet Plans Image"
           />
         </div>
         <Footer />
