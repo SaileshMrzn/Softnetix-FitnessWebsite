@@ -52,7 +52,7 @@ function Training() {
           </p>
           <img
             class="mx-auto rounded-lg mt-8 shadow-lg"
-            src="https://via.placeholder.com/600x300"
+            src="https://images.pexels.com/photos/949126/pexels-photo-949126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Diet Plans Image"
           />
         </div>

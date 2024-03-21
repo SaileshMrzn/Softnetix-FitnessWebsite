@@ -49,8 +49,8 @@ function Workshop() {
             your journey towards wellness.
           </p>
           <img
-            class="mx-auto rounded-lg mt-8 shadow-lg"
-            src="https://via.placeholder.com/600x300"
+            className="mx-auto rounded-lg mt-8 shadow-lg"
+            src="https://images.pexels.com/photos/7530005/pexels-photo-7530005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Diet Plans Image"
           />
         </div>
